@@ -1,0 +1,13 @@
+<div *ngIf="githubRepos" class="card">
+    <div class="card-header">
+        <h2>Github Repositories</h2>
+    </div>
+    <div class="card-body"></div>
+    <ul class="list-group">
+        <li *ngFor="let repo of githubRepos"class="list-group-item">
+    
+            <a [href] ="repo.html_url" class="text-primary" target=" _blank">{{repo.name}}</a>
+           
+        </li>
+    </ul>
+</div>
