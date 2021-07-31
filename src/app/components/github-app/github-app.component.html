@@ -1,32 +1,21 @@
-<div class="container">
-    <div class="row">
-        <div class="col">
-            <div class="card">
-                <div class="card-header">
-                    <h1>User Search</h1>
-                </div>
-                <div class="card-boody">
-                    <form class="form-inline" (submit)="searchUser()">
-                        <div class="form-group">
-                            <input [(ngModel)]="githubUserQuery" name="user" type="search" class="form-control" placeholder="User name">
-                        </div>
-                       
-                        <div>
-                            <input type="submit" value="Search" class="btn">
-                        </div>
-                    </form>
-                </div>
-            </div>
-        </div>
+<div class="container">  
+   <div class="header">
+        <h1>User Search</h1> 
+        <form class="form-inline" (submit)="searchUser()">
+            <input [(ngModel)]="githubUserQuery" name="user" type="search" class="input" placeholder="User name">
+            <input type="submit" value="Search" class="input">    
+        </form>
     </div>
-    
-  <div class="bio">
-     <app-github-profile [githubProfile]="githubProfile"></app-github-profile>
-  </div>
-    
-    
-   <div class="repo">
-       <app-github-repos [githubRepos]="githubRepos"></app-github-repos>
-  </div>
+           
+   
+    <div class="info">
+        <div class="bio">
+          <app-github-profile [githubProfile]="githubProfile"></app-github-profile>
+        </div> 
+         
+        <div class="repo">
+            <app-github-repos [githubRepos]="githubRepos"></app-github-repos>
+       </div>
+    </div> 
     
 </div>

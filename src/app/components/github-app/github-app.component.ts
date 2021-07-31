@@ -11,7 +11,7 @@ export class GithubAppComponent implements OnInit  {
 
   public githubUserQuery!:string;
   public githubProfile:any;
-  public githubRepos: any[] | undefined;
+  public githubRepos: any;
   public errorMessage: string="";
 
 

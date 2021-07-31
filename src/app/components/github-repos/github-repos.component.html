@@ -5,9 +5,7 @@
     <div class="card-body"></div>
     <ul class="list-group">
         <li *ngFor="let repo of githubRepos"class="list-group-item">
-    
             <a [href] ="repo.html_url" class="text-primary" target=" _blank">{{repo.name}}</a>
-           
         </li>
     </ul>
 </div>

@@ -1,8 +1,8 @@
 <div class="card">
-    <img [src]="githubProfile.avatar_url" alt="" class="img-fluid">
-    <div class="card-body">
-        <h2 class="card-title">{{githubProfile.name}}</h2>
-        <p class="card-text">{{githubProfile.bio}}</p>
-        <a [href]="githubProfile.html_url" target="_blank" class="btn btn-success btn-sm">Profile</a>
-    </div>
+    <img [src]="githubProfile.avatar_url" alt="" class="img" width=300px height=300px >
+</div>
+<div class="bio">
+    <h2 class="card-title">{{githubProfile.name}}</h2>
+    <p class="card-text">{{githubProfile.bio}}</p>
+    <a [href]="githubProfile.html_url" *ngIf="githubProfile" target="_blank" class="btn">Profile</a>
 </div>
