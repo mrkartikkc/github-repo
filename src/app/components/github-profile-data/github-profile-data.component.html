@@ -1,5 +1,5 @@
 <div class="card">
-    <div class="card-header">
+    <div *ngIf="githubProfile" class="card-header">
         <span class="badge ">{{githubProfile?.public_repos}} Repos  |</span>
         <span class="badge ">  {{githubProfile?.followers}} Followers   |</span>
         <span class="badge ">  {{githubProfile?.following}} Following  </span>
