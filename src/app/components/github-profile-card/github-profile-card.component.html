@@ -1,5 +1,5 @@
 <div class="card">
-    <img [src]="githubProfile.avatar_url" alt="" class="img" width=300px height=300px >
+    <img [src]="githubProfile.avatar_url" *ngIf="githubProfile" alt="" class="img" width=300px height=300px >
 </div>
 <div class="bio">
     <h2 class="card-title">{{githubProfile.name}}</h2>
