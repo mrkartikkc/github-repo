@@ -27,16 +27,10 @@ export class GithubAppComponent implements OnInit  {
       this.githubRepos = data 
       console.log(data)})
   }
-    
-
-
-
+  
 
   ngOnInit(): void {
   }
 
-}
-function next(next: any, arg1: (data: any) => void, error: any, arg3: () => void) {
-  throw new Error('Function not implemented.');
 }
 
